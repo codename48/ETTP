@@ -1,0 +1,8 @@
+{
+  "name": "ETTP",
+  "app_id": "692be9ea",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
