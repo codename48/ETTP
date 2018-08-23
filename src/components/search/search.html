@@ -1,0 +1,62 @@
+<!--
+  Generated template for the SearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="bg-image capital">
+    <ion-row>
+            <ion-col col-2 >
+              <a href="">
+                <img src="./assets/imgs/menu.png" class="menu-bell-size">
+              </a>   
+              </ion-col>
+            <ion-col col-8 >
+        <div class="font-bold">
+        <h4> General Enquiry</h4>
+        </div>
+        </ion-col>
+        <ion-col col-2 >
+        <a href="">
+        <img src="./assets/imgs/notification.png" class="menu-bell-size">
+        </a>   
+        </ion-col>
+        </ion-row>
+  <ion-card>
+<ion-card-header class="font-20 mtop5 capital break drop-shadow">
+  <ion-row>
+<ion-col col-9 text-wrap style="padding-right:65px;">
+    Container 
+    <br/>Enquiry
+</ion-col>
+<ion-col col-3 >
+    <img src="./assets/imgs/container-enquiry.png" style="width:60px; height: 60px; margin-top: -5px;" >
+  </ion-col>
+</ion-row>
+</ion-card-header>
+<hr class="hr">
+<ion-item >
+  <h4 class=" font-8">Enter Container Number</h4>
+  <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()" class="searchbar-md searchbar-input page-search" ></ion-searchbar>
+ 
+  <div *ngIf="searching" class="spinner-container">
+      <ion-spinner></ion-spinner>
+  </div>
+
+  
+      <ion-item *ngFor="let item of items">
+          {{item.title}}
+      </ion-item>
+  
+  </ion-item>
+  <div class="center bottom-30 ">
+
+      <button ion-button round (click)="gotoCard()" class="button-search capital" > <i class="fa fa-search paddingr-10"></i><span>Search</span></button>
+ 
+    </div>
+</ion-card>
+<div class="icon-box " >
+    <i class="fa fa-microphone ic"></i>
+ </div>
+ 
+</ion-content>

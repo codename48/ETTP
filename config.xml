@@ -81,4 +81,12 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="ionic-plugin-deeplinks" spec="^1.0.17">
+        <variable name="URL_SCHEME" value="ETTP" />
+        <variable name="DEEPLINK_SCHEME" value="https" />
+        <variable name="DEEPLINK_HOST" value="ravi/ETTP.com" />
+    </plugin>
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.1" />
+    <engine name="android" spec="7.0.0" />
+    <engine name="ios" spec="4.5.5" />
 </widget>
